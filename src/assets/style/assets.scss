@@ -1,0 +1,584 @@
+.assets-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 30px;
+}
+
+
+.assets-page .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-bottom: 40px
+}
+
+.assets-page .search-bar .rank-icon {
+  display: flex;
+  align-items: center;
+  color: #646464
+}
+
+.assets-page .search-bar .search-input {
+  width: 680px;
+  height: 48px;
+  flex-shrink: 0;
+  font-family: Aeonik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 0 0 15px;
+  border-radius: 8px
+}
+
+.assets-page .search-bar .search-input .ant-input-suffix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  border-left: 1px solid #424242;
+  cursor: pointer
+}
+
+.assets-page .list-content {
+  width: 100%
+}
+
+.assets-page .list-content .card-container {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+  gap: 12px;
+  padding: 20px 0
+}
+
+.assets-page .list-content .empty-info {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+  color: #666;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Aeonik Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.assets-page .list-content .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px
+}
+
+.assets-page .multi-checked {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 80px;
+  background: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(10px)
+}
+
+.assets-page .multi-checked-btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  //width: 1400px;
+  margin: 0 auto;
+  padding: 15px 36px
+}
+
+.assets-page .multi-checked-btn .btn {
+  display: flex;
+  width: 226px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  border: 2px solid #fff;
+  background: #000;
+  color: #fff;
+  font-family: Aeonik Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal
+}
+
+.assets-page .multi-checked-btn .btn.cancel:hover {
+  background: #fff;
+  color: #000
+}
+
+.assets-page .multi-checked-btn .btn.sweep {
+  flex-shrink: 0;
+  border-radius: 18px;
+  padding: 2px;
+  border: none;
+  background-image: linear-gradient(90deg, #ff0000, #bdff00, #00ff66, #00b2ff, #2400ff, #ff00d6)
+}
+
+.assets-page .multi-checked-btn .btn.sweep .label {
+  width: 100%;
+  height: 100%;
+  line-height: 46px;
+  border-radius: 18px;
+  background: #fff;
+  color: #000;
+  font-family: Aeonik Mono;
+  font-size: 20px
+}
+
+.assets-page .multi-checked-btn .btn.sweep .label:hover {
+  background: #dedede;
+  color: #000
+}
+
+.asset-card-new {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: #f5f5f5;
+  font-family: Aeonik Mono;
+  font-style: normal;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.asset-card-new:hover {
+  border: 1px solid #fff
+}
+
+.asset-card-new.checked {
+  border: 5px solid #fff
+}
+
+.asset-card-new .checked-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px
+}
+
+.asset-card-new .timo {
+  padding: 30px 0;
+  text-align: center;
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.asset-card-new .count-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.asset-card-new .count-info .timo-value {
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 700
+}
+
+.asset-card-new .count-info .unit {
+  font-size: 20px
+}
+
+.asset-card-new .count-info .unit .unit-text {
+  padding-left: 10px;
+  color: #646464;
+  font-size: 16px
+}
+
+.asset-card-new .count-info .price {
+  padding: 13px 0;
+  font-size: 14px;
+  color: #646464;
+}
+
+.asset-card-new .card-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding: 5px 8px ;
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid #eee;
+  background: #fff;
+  width: 100%;
+}
+
+.asset-card-new .card-bottom .inscription {
+  color: #acacac;
+  font-size: 16px;
+}
+
+.asset-card-new .card-bottom .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:5px 10px;
+  font-size: 12px;
+  &:last-child{
+    padding-top: 10px;
+    border-top:1px solid #eee;
+  }
+}
+
+.asset-card-new .card-bottom .total .token {
+  display: flex;
+  align-items: center;
+
+}
+
+.asset-card-new .card-bottom .total .token .total-token {
+  padding-left: 5px
+}
+
+.asset-card-new .card-bottom .total .total-price {
+  color: #000;
+  font-size: 14px;
+}
+
+.asset-card-new .card-bottom .buy-button {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff80;
+  background-image: linear-gradient(90deg, #ff0000, #bdff00, #00ff66, #00b2ff, #2400ff, #ff00d6);
+  padding: 1px;
+  flex-shrink: 0;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #fff
+}
+
+.asset-card-new .card-bottom .buy-button span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 36px;
+  border-radius: 8px;
+  background: #141414;
+  color: #fff;
+  font-family: Aeonik Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400
+}
+
+.asset-card-new .card-bottom .buy-button span:hover {
+  background: #fff;
+  color: #000
+}
+
+.asset-card-new .card-bottom .assets-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: auto
+}
+
+.asset-card-new .card-bottom .assets-buttons .assets-button {
+  width: 50%;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0;
+  font-family: Aeonik Mono;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+.asset-card-new.small {
+  width: 200px;
+  flex-shrink: 0
+}
+
+.asset-card-new.small:hover {
+  border: 1px solid #323232
+}
+
+.asset-card-new.small .timo {
+  font-size: 18px
+}.asset-card-new.small .timo {
+  font-size: 18px
+}
+
+.asset-card-new.small .count-info .timo-value {
+  padding: 10px 0;
+  font-size: 24px
+}
+
+.asset-card-new.small .count-info .unit {
+  font-size: 16px
+}
+
+.asset-card-new.small .count-info .unit .unit-text {
+  font-size: 12px
+}
+
+.asset-card-new.small .count-info .price {
+  padding: 10px 0
+}
+
+.asset-card-new.small .card-bottom {
+  display: none
+}
+
+.asset-card-new.small .card-bottom .total {
+  margin: 20px 0 0
+}
+
+.asset-card-new.small .card-bottom .buy-button, .asset-card-new.small .card-bottom .assets-buttons {
+  display: none
+}
+
+.asset-card-new.simple .count-info .timo-value {
+  margin-top: 20px
+}
+
+.asset-card-new.simple .count-info .unit, .asset-card-new.simple .count-info .price {
+  display: none
+}
+
+.asset-card-new.simple .card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.asset-card-new.simple .card-bottom .total {
+  display: none
+}
+
+.execute-modal .ant-modal-content {
+  padding: 20px 80px 40px
+}
+
+.execute-modal .ant-modal-close {
+  width: 32px;
+  height: 32px
+}
+
+.execute-modal .modal-title {
+  text-align: center;
+  color: #fff;
+  font-family: Aeonik Mono;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+.execute-modal .modal-desc {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: #8c8c8c;
+  text-align: center;
+  font-family: Aeonik Mono;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+.execute-modal .modal-desc.left {
+  text-align: left
+}
+
+.execute-modal .execute-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.execute-modal .execute-type .label {
+  color: #fff;
+  font-family: Aeonik Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+.execute-modal .execute-type .value {
+  width: 73px;
+  display: inline-flex;
+  padding: 4px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: Aeonik Mono;
+  font-size: 11px;
+  text-transform: capitalize
+}
+
+.execute-modal .execute-type .value.transfer, .execute-modal .execute-type .value.buy {
+  color: #008265;
+  border: .5px solid #008265;
+  background: #002418
+}
+
+.execute-modal .execute-type .value.unlist {
+  color: red;
+  border: .5px solid #ab0000;
+  background: #310000
+}
+
+.execute-modal .execute-type .value.update, .execute-modal .execute-type .value.list {
+  color: #0ff;
+  border: .5px solid #00abab;
+  background: #00312e
+}
+
+.execute-modal .item-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 16px 30px;
+  max-height: 600px;
+  margin: 30px 0;
+  overflow: auto
+}
+
+.execute-modal .item-list.gird {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  gap: 16px 30px
+}
+
+.execute-modal .total-count {
+  display: flex;
+  flex-direction: column;
+  gap: 18px
+}
+
+.execute-modal .total-count .count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-family: Aeonik Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+.execute-modal .total-count .count .value {
+  display: flex;
+  align-items: center;
+  gap: 6px
+}
+
+.execute-modal .button {
+  display: flex;
+  justify-content: center
+}
+
+.execute-modal .button .modal-confirm-btn {
+  width: 226px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  padding: 2px;
+  border: none;
+  background-image: linear-gradient(90deg, #ff0000, #bdff00, #00ff66, #00b2ff, #2400ff, #ff00d6)
+}
+
+.execute-modal .button .modal-confirm-btn .label {
+  width: 100%;
+  height: 100%;
+  line-height: 46px;
+  border-radius: 18px;
+  background: #000;
+  color: #fff;
+  font-family: Aeonik Mono;
+  font-size: 20px
+}
+
+.execute-modal .button .modal-confirm-btn .label:hover {
+  background: #333;
+  color: #000
+}
+
+.execute-modal .button .modal-confirm-btn.unlist .label {
+  color: red
+}
+
+.execute-modal .button .modal-confirm-btn.update .label {
+  color: #0ff
+}
+
+.execute-modal .price-input .price .ant-input {
+  height: 40px;
+  text-align: right;
+  outline: none;
+  color: #0ff;
+  font-family: Aeonik Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+.execute-modal .price-input .price .ant-input:focus {
+  border-color: #0ff
+}
+
+.execute-modal .price-input .price .ant-input-disabled {
+  color: gray
+}
+
+.execute-modal .price-input .price .ant-input-group-addon {
+  height: 40px;
+  padding: 8px 32px;
+  color: gray;
+  font-family: Aeonik Mono;
+  font-size: 18px
+}
+
+.execute-modal .price-input .price.new {
+  margin-top: 10px
+}
+
+.execute-modal .price-input .price.new .ant-input-group-addon {
+  color: #fff
+}
+
+.execute-modal .price-input .price.new .ant-input-group-addon .unit {
+  color: #0ff
+}
+
+.execute-modal .total-value {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 20px 0;
+  color: gray;
+  font-family: Aeonik Mono;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+.execute-modal .total-value .value {
+  color: #0ff
+}

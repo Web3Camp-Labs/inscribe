@@ -1,0 +1,54 @@
+.deploy-modal .deploy-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.deploy-modal .deploy-item .value {
+  width: 300px;
+  text-align: right
+}
+
+.deploy-modal .deploy-item .value input {
+  text-align: right
+}
+
+.deploy-modal .button {
+  display: flex;
+  justify-content: center
+}
+
+
+
+.deploy-modal .button .modal-confirm-btn .label {
+  width: 100%;
+  height: 100%;
+  line-height: 46px;
+  border-radius: 18px;
+  background: #000;
+  font-size: 20px
+}
+
+.deploy-modal .button .modal-confirm-btn .label:hover {
+  background: #333;
+  color: #000
+}
+
+.deploy-modal .button .modal-confirm-btn.unlist .label {
+  color: red
+}
+
+.deploy-modal .button .modal-confirm-btn.update .label {
+  color: #0ff
+}
+
+
+.deploy-modal .deploy-item .value {
+  width: 300px;
+  text-align: right
+}
+
+
+
